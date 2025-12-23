@@ -74,7 +74,7 @@ Confusion Matrices: The confusion matrices showed minimal misclassifications. Fo
 OOB-Error-to-Trees Curves (Random Forest): Out-of-bag (OOB) error is an estimate of the error associated with each random forest. For the initial case of Random Forest where the Audit_Risk column was kept, the out-of-bag (OOB) error remained relatively stable after 30 trees. However, for the case of Random Forest where the Audit_Risk column was dropped, the out-of-bag error was at its low at 100 trees, but climbed as the number of trees surpassed 100.
 Feature Importance (Random Forest): An important feature is one that is a significant predictor of Risk. For the initial case of Random Forest where the Audit_Risk column was kept, Audit_Risk, Inherent_Risk, Score, and TOTAL were the most important features (in that order). However, after the Audit_Risk column was dropped, Score, TOTAL, and Risk_D became the top three most important features. The order of the subsequent features were different compared to the order in the case where Audit_Risk was kept.
 
-8. Conclusion
+7. Conclusion
 This project successfully demonstrated the viability of using machine learning to automate audit risk classification. Both Logistic Regression (L1/L2) and Random Forest models achieved high performance, with accuracies well above 96%.
 
 While both models performed extremely well, the Random Forest classifier is the preferred model for deployment. Its inherent robustness against overfitting and ability to provide interpretable feature importance rankings make it the superior option within a business context, where explaining "why" a firm was flagged is necessary.
